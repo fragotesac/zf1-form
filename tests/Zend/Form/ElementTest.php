@@ -22,13 +22,10 @@
 
 require_once 'Zend/Form/Element.php';
 
-require_once 'Zend/Config.php';
 require_once 'Zend/Controller/Action/HelperBroker.php';
 require_once 'Zend/Form.php';
 require_once 'Zend/Form/Decorator/Abstract.php';
 require_once 'Zend/Form/Decorator/HtmlTag.php';
-require_once 'Zend/Loader/PluginLoader.php';
-require_once 'Zend/Registry.php';
 require_once 'Zend/Translate.php';
 require_once 'Zend/Validate/NotEmpty.php';
 require_once 'Zend/Validate/EmailAddress.php';
@@ -240,7 +237,6 @@ class Zend_Form_ElementTest extends PHPUnit\Framework\TestCase
                       ->addFilter(new Zend_Form_ElementTest_ArrayFilter());
         $test = $this->element->getValue();
         $this->assertInternalType('array', $test);
-        require_once 'Zend/Json.php';
         $test = Zend_Json::encode($test);
         $this->assertNotContains('foo', $test);
         foreach (array('bar', 'baz', 'bat') as $value) {
@@ -971,7 +967,6 @@ class Zend_Form_ElementTest extends PHPUnit\Framework\TestCase
                       ->setValue(array('foo', 'bar', 'baz'))
                       ->addError('error with value %value%');
         $errors = $this->element->getMessages();
-        require_once 'Zend/Json.php';
         $errors = Zend_Json::encode($errors);
         foreach (array('foo', 'bar', 'baz') as $value) {
             $message = 'error with value ' . $value;

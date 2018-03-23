@@ -25,7 +25,6 @@ require_once 'Zend/File/Transfer/Adapter/Abstract.php';
 require_once 'Zend/Validate/File/Upload.php';
 require_once 'Zend/Form/SubForm.php';
 require_once 'Zend/Form.php';
-require_once 'Zend/Registry.php';
 require_once 'Zend/View.php';
 
 /**

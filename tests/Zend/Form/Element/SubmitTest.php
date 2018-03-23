@@ -22,7 +22,6 @@
 
 require_once 'Zend/Form/Element/Submit.php';
 require_once 'Zend/Form.php';
-require_once 'Zend/Registry.php';
 require_once 'Zend/Translate.php';
 require_once 'Zend/Translate/Adapter/Array.php';
 

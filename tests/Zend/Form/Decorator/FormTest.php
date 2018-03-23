@@ -77,7 +77,6 @@ class Zend_Form_Decorator_FormTest extends PHPUnit\Framework\TestCase
         $this->assertEquals('formForm', $this->decorator->getHelper());
 
         require_once 'Zend/Form/DisplayGroup.php';
-        require_once 'Zend/Loader/PluginLoader.php';
         $attribs = array(
             'enctype' => 'ascii',
             'charset' => 'us-ascii'

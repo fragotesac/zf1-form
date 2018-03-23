@@ -22,15 +22,12 @@
 
 require_once 'Zend/Form/DisplayGroup.php';
 
-require_once 'Zend/Config.php';
 require_once 'Zend/Controller/Action/HelperBroker.php';
 require_once 'Zend/Form.php';
 require_once 'Zend/Form/Decorator/Form.php';
 require_once 'Zend/Form/Decorator/HtmlTag.php';
 require_once 'Zend/Form/Element.php';
 require_once 'Zend/Form/Element/Text.php';
-require_once 'Zend/Loader/PluginLoader.php';
-require_once 'Zend/Registry.php';
 require_once 'Zend/Translate.php';
 require_once 'Zend/View.php';
 
