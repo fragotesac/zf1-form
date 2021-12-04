@@ -1070,7 +1070,7 @@ class Zend_Form_Element implements Zend_Validate_Interface
      */
     public function addPrefixPath($prefix, $path, $type = null)
     {
-        $type = strtoupper($type);
+        $type = strtoupper($type ?? '');
         switch ($type) {
             case self::DECORATOR:
             case self::FILTER:
@@ -2258,7 +2258,7 @@ class Zend_Form_Element implements Zend_Validate_Interface
                     }
                 }
             } else {
-                $messages[$key] = str_replace('%value%', $value, $message);
+                $messages[$key] = str_replace('%value%', $value ?? '', $message);
             }
         }
         return $messages;

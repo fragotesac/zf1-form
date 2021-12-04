@@ -1038,6 +1038,7 @@ class Zend_Form_DisplayGroup implements Iterator, Countable
      *
      * @return Zend_Form_Element
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
         $this->_sort();
@@ -1051,6 +1052,7 @@ class Zend_Form_DisplayGroup implements Iterator, Countable
      *
      * @return string
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
         $this->_sort();
@@ -1062,6 +1064,7 @@ class Zend_Form_DisplayGroup implements Iterator, Countable
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
         $this->_sort();
@@ -1073,6 +1076,7 @@ class Zend_Form_DisplayGroup implements Iterator, Countable
      *
      * @return void
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         $this->_sort();
@@ -1084,6 +1088,7 @@ class Zend_Form_DisplayGroup implements Iterator, Countable
      *
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
         $this->_sort();
@@ -1095,6 +1100,7 @@ class Zend_Form_DisplayGroup implements Iterator, Countable
      *
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->_elements);
